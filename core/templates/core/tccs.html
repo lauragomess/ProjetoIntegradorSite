@@ -1,0 +1,10 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+{% for tcc in tccs %}
+	<h1><a href="{% url 'tcc_detalhe' pk=tcc.pk %}">{{ tcc.nome }}</a></h1>
+	<a href="{% url 'projeto_detalhe' pk=tcc.pk %}" class="top-menu"><span class="glyphicon glyphicon-search"> <b>Detalhes</b></span></a></a>	
+	<p>{{ tcc.resumo }}</p>
+{% endfor %}
+
+{% endblock %}

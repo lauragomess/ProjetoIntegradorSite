@@ -1,0 +1,127 @@
+{% extends 'core/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+
+<div class="slider">    
+    <div class="callbacks_container">
+        <ul class="rslides" id="slider">
+           <li>
+         <img src="{% static 'img/1.jpg'%}" alt=""/>
+          <div class="caption">
+          <h2></h2>
+          </div>
+           </li>
+           
+        </ul>       
+      </div>
+</div>
+
+<div class="content">
+  <div class="container">
+    <div class="about-section" id="inicio">
+      <div class="about-section-top text-center">
+        <h1><strong>Fazu - Faculdades Associadas de Uberaba</strong></h1>
+        <br><p>Missão: “Formar profissionais tecnicamente competentes, éticos e comprometidos com a sustentabilidade social, econômica e ambiental e com alta capacidade de liderança para o desenvolvimento do agronegócio nacional e internacional, garantindo assim a ‘Qualidade e Excelência no Ensino Superior’”.</p>
+      </div>
+      <div class="about-section-bottom">
+        <div class="col-md-6 what-we-do">
+          <h4>Conheça a Fazu</h4>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Beh0rbRlRlA" frameborder="0" allowfullscreen></iframe>
+          <p><strong>Aprenda. Pratique. Faça Fazu.</strong><br> <i>Na prática, a melhor formação.</i></p>
+        </div>
+        <div class="col-md-6 feature-accord">
+              <ul class="topic_grid">
+                 <li class="list1"><h4 class="m_3">Cursos de Graduação</h4></h3></li>
+               </ul>
+                <div class="menu_vertical">
+                    <section class="accordation_menu">
+                  <div>
+                    <input id="label-1" name="lida" type="radio" checked/>
+                   <label for="label-1" id="item1"><i class="ferme"> </i><span class="m_5">Agronegócio </span><i class="icon-plus-sign i-right1"></i><i class="icon-minus-sign i-right2"></i></label>
+                    <div class="content1" id="a1">
+                      <ul class="news_list">
+                     <li class="date_desc">
+                            <p>A Fazu está localizada em uma região que é o maior pólo agroindustrial do país. É cada vez maior a demanda por administradores agropecuários e de empresas rurais capacitados, facilitando assim a rápida inserção do profissional qualificado pela Fazu no mercado.</p>
+                         </li>
+                         <div class="clearfix"> </div>
+                      </ul>
+                    </div>
+                  </div>
+                  <div>
+                    <input id="label-2" name="lida" type="radio"/>
+                    <label for="label-2" id="item2"><i class="icon-leaf" id="i2"></i>Agronomia<i class="icon-plus-sign i-right1"></i><i class="icon-minus-sign i-right2"></i></label>
+                    <div class="content1" id="a2">
+                       <ul class="news_list">
+                     <li class="date_desc">
+                          <p>O objetivo é formar profissionais dotados de visão ampla, que atendam às necessidades ambientais, sociais e econômicas, atuando de maneira ética e que viabilizem a exploração das atividades agrícolas de forma sustentável.</p>
+                         </li>
+                         <div class="clearfix"> </div>
+                      </ul>      
+                    </div>
+                  </div>
+                  <div>
+                    <input id="label-3" name="lida" type="radio"/>
+                    <label for="label-3" id="item3"><i class="icon-trophy" id="i3"></i>Secretariado Executivo <i class="icon-plus-sign i-right1"></i><i class="icon-minus-sign i-right2"></i></label>
+                    <div class="content1" id="a3">
+                       <ul class="news_list">
+                         <li class="date_desc">
+                          <p>O curso centra-se no compromisso de formar gestores, assessores, consultores e empreendedores do mercado contemporâneo. Os profissionais são qualificados com habilidades para planejar, conhecimento para executar e excelência em administrar,atuando em empresas públicas ou privadas.</p>
+                         </li>
+                         <div class="clearfix"> </div>
+                      </ul>
+                    </div>
+                  </div>
+                   <div>
+                    <input id="label-4" name="lida" type="radio"/>
+                    <label for="label-4" id="item4"><i class="icon-trophy" id="i4"></i>Sistemas de Informação<i class="icon-plus-sign i-right1"></i><i class="icon-minus-sign i-right2"></i></label>
+                    <div class="content1" id="a4">
+                       <ul class="news_list">
+                         <li class="date_desc">
+                          <p>O Bacharel em Sistemas de Informação é qualificado para compreender, desenvolver, utilizar e adaptar modernas tecnologias da informação de acordo com a necessidade das organizações em que atua.</p>
+                         </li>
+                         <div class="clearfix"> </div>
+                      </ul>
+                    </div>
+                  </div>
+                   <div>
+                    <input id="label-5" name="lida" type="radio"/>
+                    <label for="label-5" id="item5"><i class="icon-trophy" id="i5"></i>Sistemas para Internet <i class="icon-plus-sign i-right1"></i><i class="icon-minus-sign i-right2"></i></label>
+                    <div class="content1" id="a5">
+                       <ul class="news_list">
+                         <li class="date_desc">
+                          <p>Atualmente, a maior demanda de programação de uso comercial e pessoal se concentra em dispositivos móveis, através de plataformas web. A Fazu desenvolveu esse curso através de sua metodologia de formação por competências, que atenderá essa nova tendência do mercado de TI.</p>
+                         </li>
+                         <div class="clearfix"> </div>
+                      </ul>
+                    </div>
+                  </div>
+                  <div>
+                    <input id="label-6" name="lida" type="radio"/>
+                    <label for="label-6" id="item6"><i class="icon-trophy" id="i5"></i>Zootecnia <i class="icon-plus-sign i-right1"></i><i class="icon-minus-sign i-right2"></i></label>
+                    <div class="content1" id="a6">
+                       <ul class="news_list">
+                         <li class="date_desc">
+                          <p>Com sua Fazenda Escola e práticas de campo essenciais para a formação do estudante, o curso permite o desenvolvimento profissional e científico do aluno, por meio das aulas, atividades de extensão e projetos de iniciação científica.</p>
+                         </li>
+                         <div class="clearfix"> </div>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <script src="{% static 'js/responsiveslides.min.js'%}"></script>
+
+
+{% endblock %}
