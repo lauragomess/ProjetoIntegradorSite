@@ -4,3 +4,4 @@ from .models import Aluno, Tcc
 # Register your models here.
 admin.site.register(Aluno)
 admin.site.register(Tcc)
+admin.site.site_header = 'Administração'

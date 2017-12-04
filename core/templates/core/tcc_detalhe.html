@@ -8,6 +8,7 @@
     <thead class="thead-inverse">
       <tr>
         <th>Título</th>
+		<th>Curso</th>
         <th>Link</th>
       </tr>
     </thead>
@@ -16,6 +17,9 @@
         <tr>
           <td>
             {{ tcc.nome }}<br/>
+          </td>
+		  <td>
+            {{ tcc.curso }}<br/>
           </td>
           
           <td class="align-middle"><a href="/media/{{tcc.document}}" download class="btn btn-success">Download</a></td>

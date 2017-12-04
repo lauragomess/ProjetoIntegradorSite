@@ -1,7 +1,6 @@
 from django.utils import timezone
 from django.db import models
 from .validators import validate_file_extension
-from .choices import *
 from django.contrib.auth.models import User
 
 # Create your models here.
@@ -20,9 +19,18 @@ class Aluno(models.Model):
 
 
 class Tcc(models.Model):
+	MY_CHOICES = (
+        ('Agronegócio', 'Agronegócio'),
+        ('Agronomia', 'Agronomia'),
+        ('Secretariado Executivo', 'Secretariado Executivo'),
+        ('Sistemas de Informação', 'Sistemas de Informação'),
+		('Sistemas para Internet', 'Sistemas para Internet'),
+		('Zootecnia', 'Zootecnia'),
+    )
 	nome = models.CharField("Nome", max_length=120)
 	aluno = models.ManyToManyField("Aluno")
-	curso = models.IntegerField(choices=MY_CHOICES)
+	curso = models.CharField(max_length=100, choices=MY_CHOICES)
+	#curso = models.IntegerField(choices=MY_CHOICES)
 	document = models.FileField(upload_to='documents/',validators=[validate_file_extension], null = True, blank = True)
 
 
